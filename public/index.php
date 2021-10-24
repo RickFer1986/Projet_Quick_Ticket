@@ -1,15 +1,15 @@
 <?php
 
 require_once(dirname(__FILE__, 2) . '/src/config/config.php');
-require_once(dirname(__FILE__, 2) . '/src/models/User.php');
+//require_once(VIEW_PATH . '/login.php');
 
-$user = new User(['name' => 'Ricardo', 'email' => 'ricardo@cod3r.com.br']);
+require_once(MODEL_PATH . '/Login.php');
 
-print_r(User::get(['name' => 'Ricardo'], 'id, name, email'));
+$login = new Login(['email' => 'pamela@quickticket.com.br', 'password' => 'a']);
 
-echo '<br>';
-
-foreach(User::get([], 'name') as $user) {
-    echo $user->name;
-    echo '<br>';
+try {
+    $login->checkLogin();
+    echo 'Deu certo :)';
+} catch(Exception $e) {
+    echo 'Problema no login :p';
 }

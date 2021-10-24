@@ -1,0 +1,23 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+}
+
+.form-login {
+    flex-basis: 450px; /* Diz o tamanho do Flex Items (Qualquer item que estiver dentro de um flex-box)*/
+}
+
+.login-card .card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.login-card .card-footer {
+    display: flex;
+    justify-content: flex-end;
+}
