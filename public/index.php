@@ -5,7 +5,7 @@ require_once(dirname(__FILE__, 2) . '/src/models/User.php');
 
 $user = new User(['name' => 'Ricardo', 'email' => 'ricardo@cod3r.com.br']);
 
-print_r(User::get(['name' => 'Chaves'], 'id, name, email'));
+print_r(User::get(['name' => 'Ricardo'], 'id, name, email'));
 
 echo '<br>';
 
