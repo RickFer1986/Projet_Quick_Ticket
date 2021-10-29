@@ -1,31 +1,59 @@
 <main class="content">
     <div class="content-title mb-4">
-        <i class="icon icofont-check-alt mr-2"></i>
-        <div>
-            <h1>Registrar Ponto</h1>
-            <h2>Mantenha seu ponto consistente</h2>
-        </div>
+        <form class="dados-pessoais" action="#" method="post">
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+        </form>
     </div>
-    <div class="card">
-        <div class="card-header">
-            <h3>10 de janeiro de 2025</h3>
-            <p class="mb-0">Os batimentos efetuados hoje</p>
-        </div>
-        <div class="card-body">
-            <div class="d-flex m-5 justify-content-around">
-                <span class="record">Entrada 1: ---</span>
-                <span class="record">Saída 1: ---</span>
+
+    <form class="dados-ingresso">
+        <div class="dados-ingressos-item">
+            <div class="dados-ingressos-divisao">
+                <label for="tipo-ingresso">Tipo de Ingresso: </label>
             </div>
-            <div class="d-flex m-5 justify-content-around">
-                <span class="record">Entrada 2: ---</span>
-                <span class="record">Saída 2: ---</span>
+            <input type="radio" name="tipo-ingresso" id="tipo-ingresso">
+            <label for="vip">VIP</label>
+            <input type="radio" name="tipo-ingresso" id="tipo-ingresso">
+            <label for="normal">Normal</label>
+        </div>
+        <div>
+            <label for="qtd">Quantidade de Ingressos</label>
+            <input type="number" name="qtd" id="qtd">
+        </div>
+    </form>
+
+    <form class="dados-preco">
+        <div>
+            <label for="preco">Preço R$</label>
+        </div>
+        <div>
+            <label for="preco-total">Preço Total R$</label>
+        </div>
+        <div>
+            <div class="dados-preco-item">
+                <label for="tipo-pag">Tipo de Pagamento: </label>
+                <label for="dinheiro">Dinheiro</label>
+                <input type="radio" name="preco" id="preco">
+                <label for="cartao">Cartão</label>
+                <input type="radio" name="preco" id="preco">
             </div>
         </div>
-        <div class="card-footer d-flex justify-content-center">
-            <a href="???" class="btn btn-success btn-lg">
-                <i class="icofont-check mr-1"></i>
-                Bater o Ponto
-            </a>
+        <div>
+            <label for="troco">Troco R$</label>
         </div>
+    </form>
+
+    <div class="form-button">
+        <button class="btn btn-lg btn-primary">Imprimir</button>
     </div>
 </main>

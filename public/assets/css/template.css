@@ -198,7 +198,6 @@ main.content .content-title {
     display: flex;
     align-items: center;
     padding-bottom: 12px;
-    border-bottom: solid 1px #ccc;
 }
 
 main.content .content-title .icon {
@@ -232,4 +231,67 @@ footer.footer {
 
 .record {
     font-size: 2.2rem;
+}
+
+
+/* Meus modelos */
+
+.content-title .dados-pessoais {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+}
+
+.dados-ingresso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 5px;
+    border: 1px solid #ddd;
+}
+
+.dados-ingresso .dados-ingressos-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.dados-ingresso .dados-ingressos-item label {
+    margin: 0 10px 0 0;
+}
+
+.dados-ingresso .dados-ingressos-item input {
+    margin: 0 10px 0 0;
+}
+
+.dados-preco {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 5px;
+    border: 1px solid #ddd;
+}
+
+.dados-preco .dados-preco-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.dados-preco .dados-preco-item label {
+    margin: 0 10px 0 0;
+}
+
+.dados-preco .dados-preco-item input {
+    margin: 0 10px 0 0;
+}
+
+.form-button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
 }
