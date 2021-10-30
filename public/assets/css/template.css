@@ -194,11 +194,13 @@ main.content {
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.2);
 }
 
+
 main.content .content-title {
-    display: flex;
-    align-items: center;
+    /*display: flex; */
+    /*align-items: center;*/
     padding-bottom: 12px;
 }
+
 
 main.content .content-title .icon {
     font-size: 3rem;
@@ -234,7 +236,32 @@ footer.footer {
 }
 
 
-/* Meus modelos */
+
+.dados-pessoais {
+    width: 100%;
+}
+
+.form-row {
+    margin: 10px;
+    border: 1px solid #1976D2;
+    border-radius: 5px;
+    font-size: 1.0rem;
+}
+
+.alt {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.alt2 {
+    display: block;
+}
+
+
+
+/* Meus modelos 
 
 .content-title .dados-pessoais {
     flex: 1;
@@ -295,3 +322,4 @@ footer.footer {
     justify-content: flex-end;
     padding: 10px;
 }
+*/
